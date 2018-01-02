@@ -14,8 +14,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'intro.html',
 })
 export class IntroPage {
+  about: any;
+  intro: any;
+  allprofiles: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.about = ("AboutPage");
+    this.intro = ("IntroPage");
+    this.allprofiles = ("AllprofilesPage");
   }
 
   ionViewDidLoad() {
