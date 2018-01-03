@@ -1,13 +1,14 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Profiler</ion-title>
-  </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
-
+<ion-tabs>
+  
+  <ion-tab tabTitle="All" [root]="allprofiles"></ion-tab>
+  <ion-tab tabTitle="About" [root]="about"></ion-tab>
+</ion-tabs>
+  
 </ion-content>
 

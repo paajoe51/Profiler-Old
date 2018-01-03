@@ -21,7 +21,7 @@ export class IntroPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.intro="IntroPage";
     this.about="AboutPage";
-    //this.allprofiles="AllprofilesPage";
+    this.allprofiles="AllprofilesPage";
   }
 
   ionViewDidLoad() {
