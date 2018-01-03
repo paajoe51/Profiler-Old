@@ -14,12 +14,13 @@
 
 
 <ion-content padding>
-
-
-  <ion-tabs>
-    <ion-tab tabTitle="Home" [root]="into"></ion-tab>
-    <ion-tab tabTitle="All" [root]="allprofiles"></ion-tab>
-    <ion-tab tabTitle="About"[root]="about"></ion-tab>
-    
-  </ion-tabs>
+  <button ion-button>
+  Add Profile
+  </button>
+  
 </ion-content>
+
+<ion-tabs>
+  <ion-tab tabTitle="Home" [root]="intro"></ion-tab>  
+  <ion-tab tabTitle="About" [root]="about"></ion-tab>
+</ion-tabs>
