@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the IntroPage page.
+ * Generated class for the AboutPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,22 +10,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-intro',
-  templateUrl: 'intro.html',
+  selector: 'page-about',
+  templateUrl: 'about.html',
 })
-export class IntroPage {
-  about:any;
-  intro:any;
-  allprofiles:any;
+export class AboutPage {
+ // tab1:any;
+  //tab2:any;
 
+ 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.intro="IntroPage";
-    this.about="AboutPage";
-    //this.allprofiles="AllprofilesPage";
+    
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad IntroPage');
+    console.log('ionViewDidLoad AboutPage');
   }
 
 }
