@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AdduserPage} from '../adduser/adduser'
+
 
 
 /**
@@ -15,17 +17,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'intro.html',
 })
 export class IntroPage {
+  home: any;
+  adduser: any;
+  allprofiles: any;
   about:any;
-  intro:any;
-  home:any;
-  allprofiles:any;
-  adduser:any;
+
+ // intro:any;
+ 
+
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.intro="IntroPage";
-    this.about="AboutPage";
-    this.allprofiles="AllprofilesPage";
+  //  this.intro= IntroPage;
+  
+    
     this.adduser ="AdduserPage";
+    this.allprofiles="AllprofilesPage";
+    this.about="AboutPage";
 
     //this.home=("HomePage");
   }
@@ -34,4 +42,11 @@ export class IntroPage {
     console.log('ionViewDidLoad IntroPage');
   }
 
+  gotoAddprofile(){
+    this.navCtrl.push(AdduserPage);
+  }
+
+  gotoAllprofile(){
+    this.navCtrl.push("AllprofilesPage");
+  }
 }

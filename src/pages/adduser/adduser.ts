@@ -22,4 +22,12 @@ export class AdduserPage {
     console.log('ionViewDidLoad AdduserPage');
   }
 
+
+  gotoAddprofile() {
+    this.navCtrl.push(AdduserPage);
+  }
+
+  gotoAllprofile() {
+    this.navCtrl.push("AllprofilesPage");
+  }
 }

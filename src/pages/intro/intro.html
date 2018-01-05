@@ -1,5 +1,16 @@
 <ion-content padding>
 
+<img src="../assets/imgs/users.png"/>
+
+<div>
+  <button ion-button full round (click) = "gotoAddprofile()">
+    Add Profile
+  </button>
+  <button ion-button full round (click)="gotoAllprofiles()">
+    All Profiles
+  </button>
+</div>
+  
 <ion-tabs>
   <ion-tab tabIcon="home" [root]="home"></ion-tab>
   <ion-tab tabTitle="Add"  tabIcon="person-add" [root]="adduser"></ion-tab>

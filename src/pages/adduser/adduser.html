@@ -1,17 +1,21 @@
-  <ion-navbar>
+ <ion-navbar>
     <ion-title>adduser</ion-title>
-  </ion-navbar>
+</ion-navbar>
  
 
-<ion-content padding>
-  <div class ="avatar">
-<img src ="../assets/imgs/add-user-button.png"/>
-  </div>
+<ion-content padding></ion-content>
+  <ion-img src ="assets/imgs/add-user-button.png">  </ion-img>
 
-<ion-list>
-  <ion-item>
-    <ion-label>Name</ion-label>
-    <ion-input type = "text" placeholder = "Enter the Name ..."></ion-input>
-  </ion-item>
-</ion-list>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Name : </ion-label>
+        <ion-input type = "text" placeholder = "Enter the Name ..."></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Number : <ion-icon name ="call"></ion-icon></ion-label>
+        <ion-input type="number" placeholder="0000-000-000"></ion-input>
+      </ion-item>
+    </ion-list>
 </ion-content>
